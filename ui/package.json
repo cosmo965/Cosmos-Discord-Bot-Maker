@@ -1,0 +1,31 @@
+{
+  "name": "cosmos-discord-bot-maker",
+  "version": "0.1.0",
+  "author": "cosmo",
+  "description": "A new application that creates Discord bots for you. Simple use. Just select what you want in the bot and the bot will generate it for you.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "^13.0.1",
+    "express": "^4.17.1",
+    "python-shell": "^3.0.0"
+  },
+  "build": {
+    "appId": "",
+    "productName": "Cosmo's Discord Bot Maker",
+    "target": "NSIS",
+    "directory": {
+      "output": "build"
+    },
+    "nsis": {
+      "oneClick": false
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "^22.10.5",
+    "electron-packager": "^15.2.0"
+  }
+}

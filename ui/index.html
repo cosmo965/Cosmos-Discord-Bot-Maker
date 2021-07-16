@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta charset="UTF-8">
+        <title>Cosmo's Discord Bot Maker</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <script src="index.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div id="container">
+            
+            <div class="information">
+                <div class="topbar">
+                    <img id="image" src="images/icon.png">
+                    <nav>
+                        <a href="#container2"><button class="update_log_button">UPDATES</button></a>
+                        <a href="#container2"><button class="credits_button">CREDITS</button></a>
+                        <a href="#container2"><button class="documentation_button">DOCS</button></a>
+                    </nav>
+                    <p>v1.0.0</p>
+                </div>
+            </div>
+            
+
+            <div class="bottom_buttons">
+                <a href="#container2"><button class="create_bot_button">CREATE BOT</button></a>
+            </div>
+
+
+        </div>
+        <div id="container2">
+            <div class="update_log">
+                <h2>UPDATE LOG</h2>
+                <div class="update_version">
+                    <h1>v1.0.0</h1>
+                    <ul>
+                        <li>- Release!</li>
+                        <li>- More features coming soon!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="credits">
+                <h1>CREDITS</h1>
+                <p>Front-end design by: cosmo</p>
+                <p>Back-end programmed by: cosmo</p>
+                <p>Discord bot programmed by: bob</p>
+            </div>
+            <div class="documentation">
+                <h1>DOCUMENTATION</h1>
+            </div>
+            <div class="create_bot_interface">
+                <p id="create_bot_label">CREATE BOT</p>
+                <div class="sections">
+                    <div class="settings_section">
+                        <p>Settings [REQUIRED]</p>
+                        <input type="text" placeholder="Bot name" id="bot_name_input">
+                        <input type="text" placeholder="Owner id" id="owner_id_input">
+                        <input type="text" placeholder="Token" id="token_input">
+                        <input type="text" placeholder="Client id" id="client_id_input">
+                        <input type="text" placeholder="Directory" id="directory_input">
+                        <button type="button" id="choose_file_button">Choose File</button>
+                    </div>
+                    <div class="minigames_section">
+                        <p>Minigames</p>
+                        <input type="checkbox" id="rps_bool_input">RPS</input>
+                        <input type="checkbox" id="coinFlip_bool_input">Coin flip</input>
+                        <div id="rps_options">
+                            <p>ROCK PAPER SCISSORS</p>
+                            <input type="text" placeholder="Victory message" id="rps_victory_message">
+                            <input type="text" placeholder="Defeat message" id="rps_defeat_message">
+                            <input type="text" placeholder="Tie message" id="rps_tie_message">
+                            <input type="number" placeholder="Cooldown" id="rps_cooldown">
+                            <input type="checkbox" id="rps_earnings_bool_input">Earnings</input>
+    
+                            <div id="rps_earnings">
+                                <button type="button" id="refresh_currencies_rps_earnings">Refresh</button>
+                                
+                                <div class="rps_earning_currency_OG" currency="" min="" max="">
+                                    <p>currency-name</p>
+                                    <input type="number" class="minimum_earnings_rps" placeholder="Minimum"></input>
+                                    <input type="number" class="maximum_earnings_rps" placeholder="Maximum"></input>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="coin_flip_options">
+                            <p>COINFLIP</p>
+                            <input type="text" placeholder="Victory message" id="coinFlip_victory_message">
+                            <input type="text" placeholder="Defeat message" id="coinFlip_defeat_message">
+                            <input type="number" placeholder="Cooldown" id="coinFlip_cooldown">
+                            <input type="checkbox" id="coinFlip_earnings_bool_input">Earnings</input>
+                            <div id="coinFlip_earnings">
+                                <button type="button" id="refresh_currencies_coinFlip_earnings">Refresh</button>
+                                
+                                <div class="coinFlip_earning_currency_OG" currency="" min="" max="">
+                                    <p>currency-name</p>
+                                    <input type="number" class="minimum_earnings_coinFlip" placeholder="Minimum"></input>
+                                    <input type="number" class="maximum_earnings_coinFlip" placeholder="Maximum"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="currencies_section">
+                        <input type="checkbox" id="currencies_bool_input">Currencies</input>
+                        <input type="checkbox" id="levelXP_bool_input">Leveling/XP</input>
+                        <div id="currencies_creator">
+                            <button type="button" id="create_new_currency_btn">Create New Currency</button>
+    
+                            <div class="currency_input" currency_name="">
+                                <input type="text" placeholder="CurrencyName" value="">
+                                <button type="button" class="delete_currency_btn">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commands_section">
+                        <p>Bot Commands</p>
+                        <input type="checkbox" id="balance_command_bool_input">Balance</input>
+                        <input type="checkbox" id="simp_command_bool_input">Simp</input>
+                        <input type="checkbox" id="constant_commands_bool_input">Constant-Commands</input>
+                    </div>
+                    <div class="moderation_section">
+                        <p>MODERATION || COMING SOON</p>
+                    </div>
+                </div>
+                <button type="button" id="submit_bot_create_button">Submit</button>
+        </div>
+        
+    </body>
+    
+</html>
