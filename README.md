@@ -35,7 +35,8 @@ Version: 1.0.0:
 ─░█── ─▀▄▄▀ ─░█── ░█▄▄▄█ ░█─░█ ▄█▄ ░█─░█ ░█▄▄█
 
 ** Before following the steps, please follow these steps: **
-    - Download the latest version of Python. https://www.python.org/downloads/
-    - run: pip install discord.py in cmd prompt.
+    +- Download the latest version of Python. https://www.python.org/downloads/
+    +- run: ```pip install discord.py``` in cmd prompt.
+    +- run ```npm ci``` in your terminal in ui folder to install all needed dependencies.
 After following these prerequisites, you may move on.
 
