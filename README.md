@@ -35,3 +35,6 @@ Version: 1.0.0:
 <br />
 After following these prerequisites, you may move on.<br />
 
+Download all the content here and put it in a folder. <br />
+Open CMD prompt and type locate the `ui` directory in this project. (`cd C:/Users/username/Desktop/Botmaker/ui`). <br />
+After opening up the directory, start the application by typing: `npm start`.
